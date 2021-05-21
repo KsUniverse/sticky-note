@@ -1,7 +1,7 @@
 package com.stick.note;
 
-import com.wesoon.web.mvc.annotation.EnableMybatisPageHelper;
-import com.wesoon.web.mvc.annotation.EnableRESTful;
+import com.wesoon.web.annotation.EnableMybatisPageHelper;
+import com.wesoon.web.annotation.EnableRESTful;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

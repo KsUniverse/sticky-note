@@ -18,6 +18,7 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <mybatis.plus.version>3.4.2</mybatis.plus.version>
+        <mybatis-plus-generator>3.4.1</mybatis-plus-generator>
     </properties>
     <dependencies>
         <dependency>
@@ -26,10 +27,19 @@
             <version>0.0.2</version>
         </dependency>
         <dependency>
+            <groupId>com.wesoon</groupId>
+            <artifactId>auth</artifactId>
+            <version>0.0.2</version>
+        </dependency>
+        <dependency>
             <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus</artifactId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>${mybatis.plus.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
     </dependencies>
 
@@ -38,6 +48,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <sourceDirectory>src/main/resources</sourceDirectory>
+                </configuration>
             </plugin>
         </plugins>
     </build>
